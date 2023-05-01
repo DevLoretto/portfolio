@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://img.icons8.com/color/144/000000/widgetsmith.png" type="image/png" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Otávio - Portfólio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="header" id="header">
+        <button onclick="toggleSideBar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </button>
+        <div class="logo_header">
+            <a class="meu_logo" href="">
+                < DevLoretto />
+            </a>
+           
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSideBar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </button>
+            <a href="#">Inicio</a>
+            <a onclick="toggleSideBar2()" href="#about">Sobre</a>
+            <a onclick="toggleSideBar2()" href="#projects">Projetos</a>
+            <a onclick="toggleSideBar2()" href="#skills">Skills</a>
+            <a onclick="toggleSideBar2()" href="#contacts">Contato</a>
+        </div>
+    </div>
+    <div tabindex="0" onclick="closeSideBar()" class="content" id="content">
+        <!-- ------  HELLO ------------------------------------------------------------------------------------------------------------------     -->
+        <div class="main-container">
+            
+           
+            <aside>
+                <img class="logo2" src="./assets/isometric-code-1.png">
+                <div class="wrapper">
+                    <div class="typing-demo">
+                        <h4>OLÁ, EU SOU</h4>
+                        <h2>Otávio Souza</h2>
+                        <h3>DESENVOLVEDOR WEB</h3>    
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+                <div class="center">
+                    <a href="./assets/curriculo.pdf" target="_blank" class="btn">
+                        <svg  viewBox="0 0 180 60" class="border">
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                        </svg>
+                        Curriculo
+                    </a>
+                </div>
+            </aside>
+            <article>
+                <img src="./assets/isometric-mobile-banking.png" alt="mulher_fundo" />
+            </article>
+        </div>
+        <!--   ABOUT ME ------------------------------------------------------------------------------------------------------------------- -->
+        <section class="about-me">
+            <div id="foto">
+                <div id="bar-foto"></div>
+            </div>
+            <div id="about">
+                <h3 class="d-400" id="aboutMeTitle">
+                    Sobre mim<spam class="point">.</spam>
+                </h3>
+                <p class="d-400" id="aboutMeP">
+                    Desenvolvedor Web com conhecimento no uso de HTML, CSS, JavaScript.
+                    Também estou me dedicando na área Back-end com Python3, além de 
+                    aprimorar minhas habilidades, também almejo aprofundar ainda mais
+                    meus conhecimentos na área de Front-end e Back-end Developer.
+                    Hoje, com 17 anos desejo cursar ciência da computação e migrar 
+                    ainda mais na tecnologia e desenvolver minha carreira. Agora estou
+                    me dedicando ao Curso Técnico de Desenvolvimento de Sistemas
+                    e estou em busca de um estágio com o objetivo principal de 
+                    expandir meus conhecimentos.
+                                 
+                    
+                </p>
+            </div>
+        </section>
+    </div>
+    <!-- PROJETOS ---------------------------------------------------------------------------------------------------------------------- -->
+    <section id="projects" class="s-projects">
+        <h3 class="title-projects d-200">Projetos<spam class="point">.</spam>
+        </h3>
+
+        <div class="container-projects d-300">
+            <div class="row-1">
+                <div class="cards-project ">
+                    <img src="./assets/projetos/LPhuddle.jpg" alt="capa projeto LPhuddle" />
+
+                    <div class="project-info">
+                        <h4>Landing Page 1</h4>
+                        <p>
+                          Exemplo Landing Page que desenvolvi em HTML e CSS.
+                        </p>
+                        <div class="btns-project">
+                            <a class="view-live" href="https://devloretto.github.io/LPhuddle/"
+                                target="_blank">View Live</a>
+                            <a class="github-repo" href="https://github.com/DevLoretto/LPhuddle"
+                                target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cards-project d-300">
+                    <img src="./assets/projetos/landingpage.png" alt="capa projeto LPcrypto" />
+
+                    <div class="project-info">
+                        <h4>Landing Page 2</h4>
+                        <p>
+                            Outro exemplo de projeto todo em HTML e CSS onde fiz uma landing page de 
+                            escola de investimento em criptomoedas.
+                        </p>
+                        <div class="btns-project">
+                            <a class="view-live" href="https://devloretto.github.io/LP-Crypto/" target="_blank">View Live</a>
+                            <a class="github-repo" href="https://github.com/DevLoretto/LP-Crypto"
+                                target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards-project">
+                    <img src="./assets/projetos/nftcard.png" alt="capa projeto nft" />
+
+                    <div class="project-info">
+                        <h4>NFT Card</h4>
+                        <p>
+                            Projeto HTML e CSS em que fiz um exemplo de preview de um card de NFT.
+                        </p>
+                        <div class="btns-project">
+                            <a class="view-live" href="https://devloretto.github.io/NFTcard/"
+                                target="_blank">View Live</a>
+                            <a class="github-repo" href="https://github.com/DevLoretto/NFTcard"
+                                target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="row-2">
+                <div class="cards-project">
+                    <img src="./assets/projetos/calc_capa.png" alt="capa projeto calculadora" />
+
+                    <div class="project-info">
+                        <h4>Projeto Calculadora</h4>
+                        <p>Projeto onde tinha como objetivo criar uma calculadora</p>
+                        <div class="btns-project">
+                            <a class="view-live" href="https://devloretto.github.io/calculadora-js/"
+                                target="_blank">View Live</a>
+                            <a class="github-repo" href="https://github.com/DevLoretto/calculadora-js"
+                                target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="cards-project">
+                    <div class="embreve">
+                        <p>EM BREVE</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <div class="row-3">
+          <a href="#" class="cards-project">
+            <div class="embreve">
+              <p>EM BREVE</p>
+            </div>
+          </a>
+        
+          <a href="#" class="cards-project">
+            <div class="embreve">
+              <p>EM BREVE</p>
+            </div>
+          </a>
+        
+          <a href="#" class="cards-project">
+            <div class="embreve">
+              <p>EM BREVE</p>
+            </div>
+          </a>
+        </div> -->
+        </div>
+        <input type="button" value="Mostrar +" id="btnMm" class="show-more d-200"></input>
+    </section>
+    <section id="skills" class="s-skills">
+        <article class="article-skills">
+            <h2 class="title-skills d-200">Skills<spam class="point">.</spam>
+            </h2>
+            <div class="skill__container d-400">
+                <ul class="skill__grid">
+                    <!--HTML-->
+                    <li>
+                        <i class="uil uil-html5-alt skill-icon"></i><br />
+                        HTML5
+                    </li>
+
+                    <!--CSS-->
+                    <li>
+                        <i class="uil uil-html3-alt skill-icon"></i> <br />
+                        CSS 3
+                    </li>
+
+                    <!--Github-->
+                    <li>
+                        <i class="uil uil-github skill-icon"></i> <br />
+                        Github
+                    </li>
+                    <!--JavaScript-->
+                    <li>
+                        <i class="uil uil-java-script skill-icon"></i> <br />
+                        JavaScript
+                    </li>
+
+                    <li>
+                        <i class="python-icon"></i> <br />
+                        Python
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </section>
+    <section id="contacts" class="s-contact">
+        <article class="article-contact">
+            <h2 class="title-contact d-200">
+                Contato<spam class="point">.</spam>
+            </h2>
+
+            <div class="social-links d-400">
+                <a href="https://www.linkedin.com/in/otavio-souza-henriques/" target="_blank">
+                    <img src="./assets/icons8-linkedin-2-60.png" alt="LinkedIn" />
+                </a>
+
+                <a href="https://github.com/DevLoretto" target="_blank"><img src="./assets/icons8-github-60.png" alt="GitHub" />
+                </a>
+
+                <a href="https://api.whatsapp.com/send?phone=380999296595" target="_blank"><img
+                        src="./assets/icons8-whatsapp-48.png" alt="WhatsApp" /></a>
+            </div>
+            <div>
+            </div>
+        </article>
+    </section>
+    <section>
+    </section>
+    <footer>
+        <a href="#">Back To Top <img src="./assets/arrowup (2).png" alt="arrowUp" /></a>
+    </footer>
+    <div class="footerD">
+        <p>Desenvolvido por Otávio Souza Henriques &copy; 2023</p>
+    </div>
+</body>
+<script src="./script.js"></script>
+<script src="./scroll.js"></script>
+<script src="./showMore.js"></script>
+
+</html>
